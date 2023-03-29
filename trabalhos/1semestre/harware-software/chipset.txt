@@ -1,9 +1,0 @@
-João Alves Cordeiro 
-
-Tema: Chipset -> Processador
-
-chipset são um conjunto de circuitos elétricos que em conjunto formam a compatibilidade e comunicação entre os componentes de hardware.
-
-sendo formado por 2 modelos de microchips, Ponte Norte que é responsável pela comunicação entre processador e memória Ran e pci's, e Ponte Sul que é responsável pela comunicação entre as portas de entrada de dados, sendo um exemplo as portas usb.
-
-Este tema tem grande relevância para o curso pois auxilia no entendimento de como funciona um hardware, que é uma grande peça de relevância para o restante dos temas!
