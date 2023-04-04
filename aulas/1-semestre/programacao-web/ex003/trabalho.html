@@ -28,16 +28,16 @@
 
         function calc() {
             let idade = Number(document.getElementById("idade").value);
-            obri = 'De 18 a 59 anos';
+            obri = 'De 18 a 69 anos';
             if (idade < 16) {
 				resul = "Você ainda não pode votar!";
 			} else if (idade >= 16 && idade <= 17) {
 				resul = "Seu voto é opcional!";
-			} else if (idade >= 18 && idade <= 59) {
+			} else if (idade >= 18 && idade <= 69) {
 				resul = "Seu voto é obrigatório!";
 			} else {
-				resul = "Seu voto é opcional!";
-			}
+                resul = "Seu voto é opcional";
+            }
             
             document.getElementById("resultado").value = resul;
             document.getElementById("obrigatorio").value = obri
