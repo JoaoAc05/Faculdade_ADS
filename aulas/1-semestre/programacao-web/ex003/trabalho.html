@@ -35,8 +35,10 @@
 				resul = "Seu voto é opcional!";
 			} else if (idade >= 18 && idade <= 69) {
 				resul = "Seu voto é obrigatório!";
-			} else {
+			} else if (idade >=70 && idade <=99) { 
                 resul = "Seu voto é opcional";
+            }else {
+                resul = "você ainda esta vivo?"
             }
             
             document.getElementById("resultado").value = resul;
