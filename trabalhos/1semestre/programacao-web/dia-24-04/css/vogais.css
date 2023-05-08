@@ -2,6 +2,11 @@
     --color1: #2626ee;
     --color2: #78d9ff;
 }
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
 header {
     height: 100px;
     

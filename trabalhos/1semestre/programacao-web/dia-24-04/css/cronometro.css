@@ -3,6 +3,11 @@
     --color2: #78d9ff;
     --color3: #bbbbbb;
 }
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
 header {
     height: 100px;
     
