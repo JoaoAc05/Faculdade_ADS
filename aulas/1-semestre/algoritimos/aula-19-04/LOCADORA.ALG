@@ -10,30 +10,41 @@ Algoritmo "Locadora"
 
 // Autor(a)    : João Alves Cordeiro
 // Data atual  : 19/04/2023
+
+//atualizacao dia 03/05/2033
+//filtro de promocao - ate 2 dias = 10% apartir de 3 dias = 20%
 Var
-   txfx, txkm, dias, kms, diastt, kmstt, total : real
+   txfx, txkm, dias, kms, diastt, kmstt, total, promo : real
 
 Inicio
 escreval("Muito obrigado por alugar um carro conosco! A Onix Car agradece!")
 escreval("A taxa fixa pelo aluguel diario é R$100,00")
 escreval("A taxa fixa por quilômetros é R$10,00")
 escreval("------------------------------------------------------------------")
-escreval("Promoção da Semana: - 10% na taxa diária")
+escreval("Promoção da Semana: - 10% na taxa diária até 2 dias")
+escreval("Apartir de 3 dias ganha 20% de desconto na taxa diária")
 escreval("")
 escreval("")
 txfx <- 100
-txkm <- 5
+txkm <- 10
 escreval("Quantos dias você permaneceu com o carro?")
 leia(dias)
 escreval("Quantos Km's foram rodados?")
 leia(kms)
-diastt <- dias * txfx
+
+diastt <- dias*txfx
+se (dias <= 2) entao
+  promo <- (diastt*0.1)
+senao
+  promo <- (diastt*0.2)
+fimse
+
 kmstt <- kms * txkm
-total <- (diastt - (10 * dias)) + kmstt
+total <- (diastt - promo) + kmstt
 limpatela
 escreval("Você tera que pagar um total de", total,"!")
 escreval("Por ", dias, " dias utilizados e ", kms, " Km's rodados!")
-escreval("Total Dias: ", (diastt - (10 * dias)))
+escreval("Total Dias: ", (diastt - promo))
 escreval("Total Km's: ", kmstt)
 
 Fimalgoritmo
