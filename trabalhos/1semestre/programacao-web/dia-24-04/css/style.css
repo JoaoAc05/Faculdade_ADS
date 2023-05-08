@@ -2,6 +2,7 @@
 
 :root {
     --color1: #2626ee;
+    --color2: #78d9ff;
 }
 body {
     margin: 0px;
@@ -13,7 +14,7 @@ header {
     
     
     background-color: var(--color1);
-    color: #78d9ff;
+    color: var(--color2);
     text-align: center;
 }
 header p {

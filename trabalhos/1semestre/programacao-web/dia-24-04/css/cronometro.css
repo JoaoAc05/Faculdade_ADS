@@ -1,6 +1,7 @@
 :root {
     --color1: #2626ee;
     --color2: #78d9ff;
+    --color3: #bbbbbb;
 }
 header {
     height: 100px;
@@ -22,7 +23,7 @@ main {
     margin: auto;
     padding: 20px;
 
-    background-color: #bbbbbb;
+    background-color: var(--color3);
     text-align: center;
     border-radius: 0px 0px 20px 20px;
     box-shadow: 2px 2px 3px #0000005b;
