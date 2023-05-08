@@ -1,0 +1,17 @@
+:root {
+    --color1: #2626ee;
+}
+header {
+    height: 100px;
+    
+    background-color: var(--color1);
+    color: #78d9ff;
+    text-align: center;
+}
+header p {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+header h1 {
+    margin-top: 0px;
+}
