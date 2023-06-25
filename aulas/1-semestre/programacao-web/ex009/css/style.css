@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap');
+
+:root {
+    --font-titulo: 'Press Start 2P', cursive, sans-serif;
+    --font-texto: 'Outfit', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    height: 70px;
+    width: 99.99%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1f1f1f52;
+    border-bottom: 1px solid #00000077;
+    backdrop-filter: blur(2px);
+
+    color: white;
+    text-decoration: none;
+}
+header ul {
+    display: flex;
+    margin-top: 20px;
+    margin-right: 40px;
+    text-align: center;
+
+    
+}
+header li {
+    margin-right: 30px;
+
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.2em;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+header li:hover {
+    cursor: pointer;
+}
+
+body {
+    background-color: #232833;
+    color: white;
+}
+
+span {
+    font-size: 1.5em;
+    font-family: var(--font-titulo);
+}
+h1 {
+    font-family: var(--font-titulo);
+}
+
+div {
+    height: 100vh;
+    
+}
+div p{
+    font-family: var(--font1);
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+div#home {
+    background-image: linear-gradient(to top right, #00000000 47%, #ffffff08 43%);
+}
+div#home p{
+    padding: 20px;  
+}
+
+div#sobre-mim {
+    display: flex;
+    text-align: justify;
+    border-top: 3px solid #ffffff0e;
+}
+div#sobre-mim section {
+    padding: 30px;
+    width: 800px;
+    height: 600px;
+    
+}
+div#sobre-mim img {
+    width: 350px;
+    height: 350px;
+    margin-top: 90px;
+    margin-left: 100px;
+
+    box-shadow: 5px 5px 8px #ffffff0c;
+    border-radius: 70px;
+}
+div#sobre-mim h1 {
+    margin-top: 80px;
+    margin-bottom: 15px;
+    font-size: 1.9em;
+}
+div#sobre-mim p {
+    margin-bottom: 10px;
+}
+
+div#projetos {
+    text-align: center;
+}
+div#projetos section {
+    width: 250px;
+    height: 275px;
+    margin: 20px;
+    padding: 30px;
+    display: inline-block;
+
+    border: 1px solid #ffffff60;
+    border-radius: 10px;
+    background-color: #ffffff15;
+    align-items: center;
+}
+
+  .projetos#pokedex {
+    background-image: url(../imagens/pokedex.jpg);
+    background-size: contain;
+    background-position: center center;
+  }
+
+
