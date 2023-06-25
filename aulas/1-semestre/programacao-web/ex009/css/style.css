@@ -125,10 +125,14 @@ div#projetos section {
     align-items: center;
 }
 
-  .projetos#pokedex {
-    background-image: url(../imagens/pokedex.jpg);
+.projetos#pokedex {
+background-image: url(../imagens/pokedex.jpg);
+background-size: contain;
+background-position: center center;
+} 
+.projetos#google-glass {
+    background-image: url(../imagens/gg2.png);
     background-size: contain;
-    background-position: center center;
-  }
-
+    background-position: center top; 
+}
 
