@@ -24,9 +24,17 @@
     </header>
     <main id="corpo">
         <div id="home">
-            <p onload="description()"></p>
-            <p>Oi, meu nome é <br><span>João Alves</span><br> e te convido a me conhecer um pouco mais!</p>
-            <p>Dev Juior</p>
+            <section>
+                <h1>HELLO WORD!</h1>
+                <p>Oi, meu nome é <br>
+                <span id="my-name">
+                    <noscript>João Alves</noscript>
+                </span>
+                <span id="barra"></span>
+                <br> e te convido a me conhecer um pouco mais! <br>
+                Dev Juior</p>
+            </section>
+            <section></section>
         </div>
         <div id="sobre-mim">
             <section>
@@ -49,22 +57,53 @@
                 </section>
             </a>
             <section class="projetos">
-                
+                <noscript>EM BREVE</noscript>
             </section>
             <br>
-            <button onclick="vermais()">Ver Mais</button>
-            <p><a href="#">Repositório no GitHub</a></p>
+            <section class="projetos">
+                <noscript>EM BREVE</noscript>
+            </section>
+            <section class="projetos">
+                <noscript>EM BREVE</noscript>
+            </section>
+            <section class="projetos">
+                <noscript>EM BREVE</noscript>
+            </section>
+            <br>
+            <!-- <button onclick="vermais()">Ver Mais</button> -->
+            <section id="p-ancora">
+                <p class="p-ancora"><a href="https://github.com/JoaoAc05" target="_blank" rel="external">Repositório no GitHub</a></p>
+            </section>
         </div>
         <div id="social">
             <!-- Mostrar algumas certicações e abaixo link para realizar os cursos -->
-            <p>Obrigado por conhecer um pouco da minha história!</p>
-            <p>Atualmente estou em busca de uma oportunidade como programador junior. Disponibilidades de contatos a baixo.</p>
-            <img src="imagens/instagram.ico" alt="Instagram">
-            <img src="imagens/email.ico" alt="Email">
-            <img src="imagens/github.ico" alt="GitHub">
+            <section id="social-end">
+                <p>Obrigado por conhecer um pouco da minha história!</p>
+                <p>Atualmente estou em busca de uma oportunidade como programador junior. Disponibilidades de contatos a baixo.</p>
+                <a href="https://www.instagram.com/joao_a_c_/" target="_blank" rel="external"><img src="imagens/instagram.ico" alt="Instagram"></a>
+                <img src="imagens/email.ico" alt="Email">
+                <img src="imagens/github.ico" alt="GitHub">
+            </section>
         </div>
     </main>
     <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        var nomeElement = document.getElementById('my-name');
+        var nome = 'João Alves';
+        var index = 0;
+
+        function escreverNome() {
+            nomeElement.innerHTML += nome[index];
+            index++;
+            if (index < nome.length) {
+            setTimeout(escreverNome, 200); 
+            }
+        }
+
+        escreverNome();
+        });
+        
+
         function scrollToDiv(targetId) {
         const targetElement = document.getElementById(targetId);
         const targetPosition = targetElement.offsetTop - 80; // Subir 80 pixels do header
