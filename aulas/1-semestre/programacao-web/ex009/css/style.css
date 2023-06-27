@@ -124,7 +124,7 @@ div#projetos {
     text-align: center;
     padding: 30px;
 }
-div#projetos section.projetos {
+section.projetos {
     width: 250px;
     height: 275px;
     margin: 20px;
@@ -139,11 +139,42 @@ div#projetos section.projetos {
 
 div#social {
     height: 70vh;
-    display: flex; /*Possibilita mobilidade*/
-    justify-content: center; /* Alinha o conteúdo à esquerda */
-    align-items: end; /* Centraliza verticalmente */
+    /* flex-direction: column; */
+    /* justify-content: center;  */
+    /* align-items: center; */
+/* Possibilita mobilidade
+Alinha o conteúdo à esquerda
+Centraliza verticalmente */
 }
-div#social section#social-end {
+div#social h1 {
+    text-align: center;
+    align-items: center;
+}
+
+section.certificacao {
+    width: 180px;
+    height: 200px;
+    margin: 20px;
+    padding: 30px;
+    display: inline-flex;
+
+    border: 1px solid #ffffff60;
+    border-radius: 10px;
+    background-color: #ffffff15;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+div#social div.p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 370px; */
+}
+div.p div {
+    margin: 30px 20px 0px 20px;
+}
+div#social div#social-end {
+    justify-content: end;
     text-align: center;
 }
 
@@ -183,7 +214,7 @@ section#p-ancora p.p-ancora:hover {
     padding: 15px;
 }
 
-@media screen and (min-width: 993px) and (max-width: 1400px) { /* Desk Top */
+@media screen and (min-width: 993px) and (max-width: 1400px) { /* Responsividade de Desk Top */
 
     div#sobre-mim img {
         margin-left: 30px;
@@ -207,9 +238,12 @@ section#p-ancora p.p-ancora:hover {
         /* align-items: center; */
     }
 
+    section#p-ancora {
+        margin-top: 15px;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) and (max-width: 992px) { /*Responsividade de Tablets*/
     div#sobre-mim section {
         padding: 30px;
         width: 550px;
@@ -251,9 +285,17 @@ section#p-ancora p.p-ancora:hover {
         border-radius: 10px;
         background-color: #ffffff15; 
     }
+
+    section#p-ancora {
+        margin-top: 20px;
+    }
 }
 
-@media screen and (min-width: 601px) and (max-width: 767px) {
+@media screen and (min-width: 601px) and (max-width: 767px) { /*Responsividade de Celulares*/
+    div {
+        height: 80vh; 
+    }
+
     div#sobre-mim section {
         padding: 20px;
         width: 400px;
@@ -294,5 +336,9 @@ section#p-ancora p.p-ancora:hover {
         border: 1px solid #ffffff60;
         border-radius: 10px;
         background-color: #ffffff15; 
+    }
+
+    section#p-ancora {
+        margin-top: 15px;
     }
 }
