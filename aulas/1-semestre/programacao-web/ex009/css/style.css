@@ -69,6 +69,9 @@ h1 {
 
 div {
     height: 100vh; 
+    
+}
+div.container {
     border-top: 3px solid #ffffff0e;
 }
 div p{
@@ -142,42 +145,52 @@ div#social {
     /* flex-direction: column; */
     /* justify-content: center;  */
     /* align-items: center; */
-/* Possibilita mobilidade
-Alinha o conteúdo à esquerda
-Centraliza verticalmente */
+    /* Possibilita mobilidade
+    Alinha o conteúdo à esquerda
+    Centraliza verticalmente */
 }
 div#social h1 {
+    margin-top: 30px;
     text-align: center;
     align-items: center;
 }
 
 section.certificacao {
-    width: 180px;
+    width: 260px;
     height: 200px;
     margin: 20px;
     padding: 30px;
-    display: inline-flex;
 
     border: 1px solid #ffffff60;
     border-radius: 10px;
     background-color: #ffffff15;
-    /* align-items: center; */
-    /* justify-content: center; */
 }
 div#social div.p {
+    height: 480px;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* height: 370px; */
 }
 div.p div {
     margin: 30px 20px 0px 20px;
-}
-div#social div#social-end {
-    justify-content: end;
+    height: 375px;
     text-align: center;
 }
-
+/* section#html-css {
+    background-image: url(../certificacao/Certificado-html_e_css.jpg);
+} */
+div#social div#social-end {
+    height: 160px;
+    justify-content: end;
+    text-align: center;
+    font-size: 1.4em;
+    margin-bottom: 0px;
+}
+div#social div#social-end img {
+    width: 75px;
+    height: 75px;
+    margin: 10px 20px 0px 20px;
+}
 
 .projetos#pokedex {
 background-image: url(../imagens/pokedex.jpg);
