@@ -176,9 +176,17 @@ div.p div {
     height: 375px;
     text-align: center;
 }
-/* section#html-css {
-    background-image: url(../certificacao/Certificado-html_e_css.jpg);
-} */
+section.certificacao#html {
+    background-image: url(../certificacao/Certificado-html_e_css-1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+section.certificacao#html-js {
+    background-image: url(../certificacao/Certificado-html_e_css-1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
 div#social div#social-end {
     height: 160px;
     justify-content: end;
@@ -254,6 +262,22 @@ section#p-ancora p.p-ancora:hover {
     section#p-ancora {
         margin-top: 15px;
     }
+
+
+    section.certificacao {
+        width: 230px;
+        height: 200px;
+        margin: 10px;
+        padding: 20px;
+    }
+    div#social div.p {
+        height: 430px;
+        margin-bottom: 20px;
+    }
+    div.p div {
+        margin: 10px 5px 0px 10px;
+        height: 375px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) { /*Responsividade de Tablets*/
@@ -302,6 +326,23 @@ section#p-ancora p.p-ancora:hover {
     section#p-ancora {
         margin-top: 20px;
     }
+
+    section.certificacao {
+        width: 200px;
+        height: 150px;
+        margin: 10px;
+        padding: 10px;
+    }
+    div#social div.p {
+        height: 350px;
+        margin-bottom: 20px;
+        font-size: 0.8em;
+    }
+    div.p div {
+        margin: 10px 5px 0px 5px;
+        height: 235px;
+    }
+    
 }
 
 @media screen and (min-width: 601px) and (max-width: 767px) { /*Responsividade de Celulares*/
@@ -353,5 +394,24 @@ section#p-ancora p.p-ancora:hover {
 
     section#p-ancora {
         margin-top: 15px;
+    }
+
+    section.certificacao {
+        width: 220px;
+        height: 150px;
+        margin: 10px;
+        padding: 10px;
+    }
+    div#social div.p {
+        height: 320px;
+        margin-bottom: 20px;
+        font-size: 0.8em;
+    }
+    div.p div {
+        margin: 5px 5px 0px 10px;
+        height: 205px;
+    }
+    div#logica {
+        display: none;
     }
 }
