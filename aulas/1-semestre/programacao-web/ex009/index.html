@@ -25,16 +25,16 @@
     <main id="corpo">
         <div id="home" class="container">
             <section>
-                <h1>HELLO WORD!</h1>
+                <img src="imagens/logo-removebg-preview.png" alt="">
+            </section>
+            <section><h1>HELLO WORD!</h1>
                 <p>Oi, meu nome é <br>
                 <span id="my-name">
                     <noscript>João Alves</noscript>
                 </span>
                 <span id="barra"></span>
-                <br> e te convido a me conhecer um pouco mais! <br>
-                Dev Junior</p>
-            </section>
-            <section></section>
+                <br> e te convido a me conhecer um pouco mais!</p></section>
+            
         </div>
         <div id="sobre-mim" class="container">
             <section>
@@ -43,11 +43,13 @@
                 Tive contato a primeira vez com a área de programação em 2019 a partir de acompanhamento do meu irmão na realização da faculdade, mas iniciei meus estudos em 2022 ainda no ensino médio, com lógica de programação, HTML e CSS.</p>
                 <p>Hoje estou realizando o curso tecnólogo de ADS (Análise e Desenvolvimento de Sitemas) na Unifasipe(Sinop), ainda no 1º Semestre. <br>
                 Gosto de explorar novas areas da programação e desenvolver projetos!</p>
-                <div id="a">
+                <div id="a" >
                     <p class="p-ancora"><a href="https://www.linkedin.com/in/joão-alves-cordeiro-762784281/" target="_blank" rel="external">Linkedin</a></p>
                 </div>
             </section>
-            <img src="imagens/Social2.jpg" alt="">
+            <section>
+                <img src="imagens/Social2.jpg" alt="Foto de João Alves">
+            </section>
         </div>
         <div id="projetos" class="container">
             <h1>Projetos</h1>
@@ -83,18 +85,22 @@
                 <div>
                     
                     <a href="certificacao/html-css123.pdf" target="_blank" rel="external"> 
-                        <section class="certificacao" id="html"></section>
+                        <section class="certificacao" id="html">
+                        </section>
                     </a>
                     <p>HTML-CSS 120HRS</p>
                 </div>
                 <div>
                     <a href="certificacao/Certificado-html5.pdf" target="_blank" rel="external">
-                        <section class="certificacao" id="html-js"></section>
+                        <section class="certificacao" id="html-js">
+                        </section>
                     </a>
                     <p>HTML-CSS-JS 40HRS</p>
                 </div>
                 <div id="logica">
-                    <section class="certificacao" ></section>
+                    <section class="certificacao" >
+                        <noscript>EM BREVE</noscript>
+                    </section>
                     <p>Logica de Programação: realizando</p>
                 </div>
                 <!-- Ideia: Criar botão de ver mais -->
@@ -104,62 +110,13 @@
                 <p>Obrigado por conhecer um pouco da minha história!</p>
                 <p>Atualmente estou em busca de uma oportunidade como programador junior. Disponibilidades de contatos a baixo.</p>
                 <a href="https://www.instagram.com/joao_a_c_/" target="_blank" rel="external"><img src="imagens/instagram.ico" alt="Instagram"></a>
-                <img src="imagens/email.ico" alt="Email">
+                <a href="#"><img src="imagens/email.ico" alt="Email"></a>
                 <a href="https://github.com/JoaoAc05" target="_blank" rel="external"><img src="imagens/github.ico" alt="GitHub"></a>
                 <a href="https://www.linkedin.com/in/joão-alves-cordeiro-762784281/" target="_blank" rel="external"><img src="imagens/linkedin.ico" alt="Linkedin"></a>
             </div>
         </div>
     </main>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-        var nomeElement = document.getElementById('my-name');
-        var nome = 'João Alves';
-        var index = 0;
-
-        function escreverNome() {
-            nomeElement.innerHTML += nome[index];
-            index++;
-            if (index < nome.length) {
-            setTimeout(escreverNome, 200); 
-            }
-        }
-
-        escreverNome();
-        });
-        
-
-        function scrollToDiv(targetId) {
-        const targetElement = document.getElementById(targetId);
-        const targetPosition = targetElement.offsetTop - 80; // Subir 80 pixels do header
-        const startPosition = window.pageYOffset;
-        const distance = targetPosition - startPosition;
-        const duration = 1500; // 1,5 segundos
-        let start = null;
-
-        function animateScroll(timestamp) {
-            if (!start) start = timestamp;
-            const progress = timestamp - start;
-            window.scrollTo(0, easeInOutCubic(progress, startPosition, distance, duration));
-            if (progress < duration) {
-            requestAnimationFrame(animateScroll);
-            }
-        }
-
-        function easeInOutCubic(t, b, c, d) {
-            t /= d / 2;
-            if (t < 1) return c / 2 * t * t * t + b;
-            t -= 2;
-            return c / 2 * (t * t * t + 2) + b;
-        }
-
-        requestAnimationFrame(animateScroll);
-        }
+    <script src="js/comands.js">
     </script>
 </body>
-
-<!-- AJUSTAR DETALHES FINAIS
-LINKS FINAIS DO SOCIAL
-ADCIONAR LINK PARA CURRICULO APOS SOBRE-MIM
-TRABALHAR O HOME -->
-
 </html>
