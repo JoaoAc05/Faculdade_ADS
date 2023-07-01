@@ -39,4 +39,4 @@ document.addEventListener('DOMContentLoaded', function() {
         return c / 2 * (t * t * t + 2) + b;
     }
     requestAnimationFrame(animateScroll);
-    }
+}
