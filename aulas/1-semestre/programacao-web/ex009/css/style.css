@@ -120,6 +120,17 @@
     div#home section h1{
         margin-left: 20px;
     }
+
+    @keyframes slideUpDown {
+        0% { transform: translateY(0%); }
+        25% { transform: translateY(-20%); }
+        75% { transform: translateY(20%);}
+        100% { transform: translateY(0%); }
+    }
+    #image-home img{
+        animation: slideUpDown 5s infinite;
+    }
+
 /* Fim Container Home */
 
 /* Inicio Container Sobre-Mim */
