@@ -465,8 +465,11 @@ div#home img {
 }
 
 @media screen and (max-width: 576px) { /*Responsividade Preventiva*/
+    body {
+        width: 100%;
+    }
     div {
-        height: 60vh; 
+        height: 70vh; 
     }
 
 /* Home */
@@ -474,8 +477,11 @@ div#home img {
     display: none;
 }
 /* Fim */    
-
-
+.p-ancora { 
+    width: 200px;
+    
+    padding: 10px;
+}
 /* Sobre-Mim */
     div#sobre-mim section {
         padding: 10px;
@@ -533,16 +539,16 @@ div#home img {
         margin-top: 15px;
     }
     section.certificacao {
-        width: 200px;
-        height: 130px;
-        margin: 10px;
-        padding: 10px;
+        width: 180px;
+        height: 110px;
+        margin: 5px;
+        padding: 5px;
     }
     div#social div.p {
-        height: 300px;
-        margin-bottom: 20px;
+        height: 290px;
+        margin-bottom: 10px;
         /*  */
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
     div.p div {
         height: 195px;
