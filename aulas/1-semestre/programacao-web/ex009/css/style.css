@@ -121,15 +121,19 @@
         margin-left: 20px;
     }
 
-    @keyframes slideUpDown {
+    /* 
+        Animação da imagem no Home
+        
+        @keyframes slideUpDown {
         0% { transform: translateY(0%); }
-        25% { transform: translateY(-20%); }
-        75% { transform: translateY(20%);}
+        50% { transform: translateY(-20%); }
         100% { transform: translateY(0%); }
     }
     #image-home img{
-        animation: slideUpDown 5s infinite;
-    }
+        animation: slideUpDown 3s infinite;
+    } 
+    
+    */
 
 /* Fim Container Home */
 
